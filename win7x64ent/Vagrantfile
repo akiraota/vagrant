@@ -1,0 +1,63 @@
+# ゲストOS 1 開発環境
+Vagrant.configure(2) do |config|
+  # Every Vagrant development environment requires a box. You can search for
+  # boxes at https://atlas.hashicorp.com/search.
+  config.vm.box = "opentable/win-7-enterprise-amd64-nocm"
+
+  # ゲストOSの種類
+  config.vm.guest = :windows
+
+  # 通信方法をsshからwinrmに変更
+  config.vm.communicator = "winrm"
+
+  # NATアダプターのポートフォワーディング
+  config.vm.network "forwarded_port", guest: 3389, host: 13389, id: "rdp"
+  config.vm.network "forwarded_port", guest: 5985, host: 15985, id: "winrm"
+
+  # ホストオンリーアダプター(ホストOS<->ゲストOS、ゲストOS<->ゲストOS)
+  config.vm.network "private_network", ip: "192.168.56.102"
+  # 内部ネットワークアダプター(ゲストOS<->ゲストOS)
+  #config.vm.network "private_network", ip: "192.168.56.102", virtualbox__intnet: "intnet"
+  # ブリッジアダプター（外部->ゲストOS）
+  config.vm.network "public_network", bridge: 'Realtek PCIe GBE Family Controller', ip: "192.168.3.122"
+
+  # VirtualBoxの設定
+  config.vm.provider "virtualbox" do |vb|
+    # ネットワークアダプタータイプの設定
+    vb.customize ["modifyvm", :id, "--nictype1",  "82540EM"]
+    vb.customize ["modifyvm", :id, "--nictype2",  "82540EM"]
+    vb.customize ["modifyvm", :id, "--nictype3",  "82540EM"]
+
+    # GUIを有効
+    vb.gui = false
+
+    # VMのメモリ割り当てを設定
+    vb.memory = "1024"
+  end
+
+  # Disable automatic box update checking. If you disable this, then
+  # boxes will only be checked for updates when the user runs
+  # `vagrant box outdated`. This is not recommended.
+  # config.vm.box_check_update = false
+
+  # Share an additional folder to the guest VM. The first argument is
+  # the path on the host to the actual folder. The second argument is
+  # the path on the guest to mount the folder. And the optional third
+  # argument is a set of non-required options.
+  # config.vm.synced_folder "../data", "/vagrant_data"
+
+  # Define a Vagrant Push strategy for pushing to Atlas. Other push strategies
+  # such as FTP and Heroku are also available. See the documentation at
+  # https://docs.vagrantup.com/v2/push/atlas.html for more information.
+  # config.push.define "atlas" do |push|
+  #   push.app = "YOUR_ATLAS_USERNAME/YOUR_APPLICATION_NAME"
+  # end
+
+  # Enable provisioning with a shell script. Additional provisioners such as
+  # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
+  # documentation for more information about their specific syntax and use.
+  # config.vm.provision "shell", inline: <<-SHELL
+  #   sudo apt-get update
+  #   sudo apt-get install -y apache2
+  # SHELL
+end
