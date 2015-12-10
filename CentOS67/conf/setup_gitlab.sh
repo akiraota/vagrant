@@ -17,7 +17,7 @@ yum -y install gitlab-ce-7.13.5-ce.0.el6.x86_64
 # gitlab‚Ì“ú–{Œê‰»
 yum -y install patch
 cd /var/tmp
-wget https://raw.githubusercontent.com/ksoichiro/gitlab-i18n-patch/master/patches/v7.13.5/app_ja.patch
+wget -nv https://raw.githubusercontent.com/ksoichiro/gitlab-i18n-patch/master/patches/v7.13.5/app_ja.patch
 cd /opt/gitlab/embedded/service/gitlab-rails
 patch -p < /var/tmp/app_ja.patch
 

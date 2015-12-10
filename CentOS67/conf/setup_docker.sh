@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# dockerのインストール
+# docker 1.7.1のインストール
 yum --enablerepo=epel -y install docker-io
 
 # バージョンと場所の確認

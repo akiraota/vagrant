@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# gradle
+# gradle 2.8のインストール
 cd /usr/local
-wget https://services.gradle.org/distributions/gradle-2.8-all.zip
+wget -nv https://services.gradle.org/distributions/gradle-2.8-all.zip
 unzip -q gradle-2.8-all.zip
 
 # リンク作成

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo 'BOX Provision Start' `date`
+echo 'BOX Provision Start' `date +"%Y/%m/%d %H:%M:%S"`
 
 # OS
 su -l root -c /vagrant/conf/setup_init.sh > /vagrant/conf/install_init.log  2>&1
@@ -23,6 +23,9 @@ su -l root -c /vagrant/conf/setup_ansible.sh > /vagrant/conf/install_ansible.log
 # docker
 su -l root -c /vagrant/conf/setup_docker.sh > /vagrant/conf/install_docker.log 2>&1
 
+# nginx
+su -l root -c /vagrant/conf/setup_nginx.sh > /vagrant/conf/install_nginx.log 2>&1
+
 # Jenkins
 su -l root -c /vagrant/conf/setup_jenkins.sh > /vagrant/conf/install_jenkins.log 2>&1
 
@@ -35,6 +38,6 @@ su -l root -c /vagrant/conf/setup_jenkins.sh > /vagrant/conf/install_jenkins.log
 # packer
 
 
-echo 'BOX Provision Finish' `date`
+echo 'BOX Provision Finish' `date +"%Y/%m/%d %H:%M:%S"`
 
 exit 0

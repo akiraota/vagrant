@@ -11,9 +11,11 @@ TIME
 source /etc/sysconfig/clock
 
 # yum
-yum update
-yum install wget
-yum install unzip
+yum -y update
+yum -y install unzip
+yum -y install ntp
+chkconfig ntpd on
+service ntpd start
 
 # locale
 yum -y groupinstall "Japanese Support"
@@ -25,8 +27,8 @@ SYSFONT="latarcyrheb-sun16"
 LANG
 
 # SELinux‚Ì–³Œø‰»
-cp -p /etc/selinux/conf /etc/selinux/conf.org
-cp -f /vagrant/conf/etc/selinux/conf /etc/selinux/conf
+cp -p /etc/selinux/config /etc/selinux/config.org
+cp -f /vagrant/conf/etc/selinux/config /etc/selinux/config
 
 # SELinux‚ÌˆêŽž–³Œø‰»
 setenforce 0
