@@ -20,11 +20,10 @@ OSごとにベースとなるBOXをイメージ化しておくと、各用途の
 
 OSインストール直後の状態であるBOXは以下の方法で入手  
 1. VirtualBoxでISOイメージを使って手作業でインストール
-
 1. ATLASなどで配布されているBOX化済みOSイメージを登録
-
-`>vagrant box add BOX名 BOXのURL`
-
+~~~
+>vagrant box add BOX名 BOXのURL
+~~~
 1. Packerを使いBOXを作成  
 調査中
 
