@@ -1,0 +1,50 @@
+# Xwayアプリサーバー
+Vagrant.configure(2) do |config|
+  # Every Vagrant development environment requires a box. You can search for
+  # boxes at https://atlas.hashicorp.com/search.
+  config.vm.box = "Win2012R2_base"
+
+  # ゲストOSの種類
+  config.vm.guest = :windows
+
+  # 通信方法をsshからwinrmに変更
+  config.vm.communicator = "winrm"
+
+  # NATアダプターのポートフォワーディング
+  config.vm.network "forwarded_port", guest: 3389, host: 13389, id: "rdp"
+  config.vm.network "forwarded_port", guest: 5985, host: 15985, id: "winrm"
+  config.vm.network "forwarded_port", guest: 8080, host: 8888, id: "GlassFish WebApp"
+  config.vm.network "forwarded_port", guest: 4848, host: 8889, id: "GlassFish Console"
+
+  # ホストオンリーアダプター(ホストOS<->ゲストOS、ゲストOS<->ゲストOS)
+  #config.vm.network "private_network", ip: "192.168.56.102"
+  # 内部ネットワークアダプター(ゲストOS<->ゲストOS)
+  config.vm.network "private_network", ip: "192.168.56.102", virtualbox__intnet: "intnet"
+  # ブリッジアダプター（外部->ゲストOS）
+  config.vm.network "public_network", bridge: 'HP Ethernet 1Gb 2-port 330i Adapter', ip: "192.168.10.11", netmask: "255.255.255.0"
+
+  # VirtualBoxの設定
+  config.vm.provider "virtualbox" do |vb|
+    # ネットワークアダプタータイプの設定
+    vb.customize ["modifyvm", :id, "--nictype1",  "82540EM"]
+    vb.customize ["modifyvm", :id, "--nictype2",  "82540EM"]
+    vb.customize ["modifyvm", :id, "--nictype3",  "82540EM"]
+
+    # GUIを有効
+    vb.gui = true
+
+    # VMのメモリ割り当てを設定
+    #vb.memory = "1024"
+  end
+
+  # 共有フォルダ
+  config.vm.synced_folder "C:/Projects/Xway/Vagrant/XwayAppServer_base", "C:/Vagrant"
+
+  # Enable provisioning with a shell script. Additional provisioners such as
+  # Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the
+  # documentation for more information about their specific syntax and use.
+  # config.vm.provision "shell", inline: <<-SHELL
+  #   sudo apt-get update
+  #   sudo apt-get install -y apache2
+  # SHELL
+end
