@@ -1,16 +1,16 @@
 ベースBOXの作成手順
 ===============
 
-イメージからBOXを作成したり、バージョンアップなどでBOXを再作成するとき
+イメージからBOXを作成したり、バージョンアップなどでBOXを再作成するとき、
 OSごとにベースとなるBOXをイメージ化しておくと、各用途のサーバーを構築する際に
 イメージの共有および構築時間の短縮などの効果が期待できる。
 
-※VirtualBoxはチョコラティ、Vagrantは手作業でインストールされているものとする
-※Vagrantのプラグインvagrant-vbguestは以下のコマンドでインストールされているものとする
+※ホストOSにはチョコラティでVirtualBox、Vagrantがインストールされているものとする。
+※Vagrantのプラグインvagrant-vbguestは以下のコマンドでインストールされているものとする。
 >vagrant plugin install vagrant-vbguest
 
-ここでは作業をWindowsクライアントで行うとして、
-ベースBOXの作成場所を以下のフォルダで行ったものとする。
+ここではホストOS側（Windows）で行う作業として説明する。
+また、ベースBOXの作成は以下のフォルダで行ったものとする。
 C:\Vagrant\rebox
 
 ■BOXの登録
@@ -23,7 +23,7 @@ OSインストール直後の状態であるBOXは以下の方法で入手
 
 ■ベースBOXの作成準備
 
-C:\Vagrant\rebox で仮想マシン作成済みなら仮想マシンや登録BOXを削除
+C:\Vagrant\rebox で仮想マシン作成済みなら1～3で仮想マシンや登録BOXを削除
 1.コマンドプロンプト起動(VirtualBOXから削除)
   >cd C:\Vagrant\rebox
   >vagrant destroy
@@ -33,7 +33,7 @@ C:\Vagrant\rebox で仮想マシン作成済みなら仮想マシンや登録BOXを削除
 
 3.C:\Vagrant\rebox\Vagrantfileを削除
 
-リモートリポジトリからVagrantBaseBoxプロジェクトをクローン
+4.GitBucketのリモートリポジトリからVagrantBaseBoxプロジェクトを任意のフォルダにクローン
 VagrantBaseBox
 ├CentOS
 │└6.7
@@ -49,32 +49,30 @@ VagrantBaseBox
 　└2012R2
 　　└
 
-4.ベースBOX作成用vagrantfileをC:\Vagrant\reboxにコピー
-  最後のend前に以下があること
-  config.vm.provision "shell", path: "./conf/provision.sh"
+5.ベースBOX作成用VagrantfileをC:\Vagrant\reboxにコピー
 
-5.ベースBOX作成用confフォルダをC:\Vagrant\reboxにコピー
+6.ベースBOX作成用confフォルダをC:\Vagrant\reboxにコピー
 
-6.コマンドプロンプト起動（5～10分程度）
+7.コマンドプロンプト起動（5～10分程度）
   自動的にVirtualBOXに仮想マシンの作成とVagrantのBOX登録を実施
   この時、ホストとゲストの間でVirtualBox Guest Additionsのバージョンが
   違う場合に、Vagranta-vbguestプラグインがゲストを更新してくれる。
   >cd C:\Vagrant\rebox
   >vagrant up
 
-7.コマンドプロンプトでゲストOSを一旦停止
+8.コマンドプロンプトでゲストOSを一旦停止
   >vagrant halt
 
-8.ゲストOSを再度起動し問題ないか確認
+9.ゲストOSを再度起動し問題ないか確認
   ※Guest Addtionがyum update後にもう一度更新される場合あり
   >vagrant up
 
 ■ベースBOXの作成
-1.ベースBOX作成前にBOXのファイルサイズを小さくする処理を行うため
-  TeraTermでゲストOSにSSH接続する
-  IP:127.0.0.1
-  Port:2222（デフォルトポートフォワード）
-  ID/PASS:vagrant
+1.ベースBOX作成前にBOXのファイルサイズを小さくする処理を行うためTeraTermでゲストOSにSSH接続する
+  ホストOSからの場合
+    IP:127.0.0.1
+    Port:2222（デフォルトポートフォワード）
+  ID/PASS:vagrant/vagrant
 
 2.パーミッションの確認
   /home/vagrant 700 or 711 or 755
