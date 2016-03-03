@@ -1,7 +1,8 @@
 ベースBOXの作成手順
 ===============
 
-##はじめに
+はじめに
+---------------
 
 イメージからBOXを作成したり、バージョンアップなどでBOXを再作成するとき、  
 OSごとにベースとなるBOXをイメージ化しておくと、各用途のサーバーを構築する際に  
@@ -17,7 +18,7 @@ OSごとにベースとなるBOXをイメージ化しておくと、各用途の
 
 `C:\Vagrant\rebox`
 
-##BOXの登録
+## BOXの登録
 
 OSインストール直後の状態であるBOXは以下の方法で入手  
 ①VirtualBoxでISOイメージを使って手作業でインストール
@@ -29,7 +30,7 @@ OSインストール直後の状態であるBOXは以下の方法で入手
 ③Packerを使いBOXを作成  
 調査中
 
-##ベースBOXの作成準備
+## ベースBOXの作成準備
 
 C:\Vagrant\rebox で仮想マシン作成済みなら1～3で仮想マシンや登録BOXを削除
 
@@ -81,7 +82,7 @@ Vagranta-vbguestプラグインがゲストを更新してくれる。
 
 `  >vagrant up`
 
-##ベースBOXの作成
+## ベースBOXの作成
 
 1.ベースBOX作成前にBOXのファイルサイズを小さくする処理を行うためTeraTermでゲストOSにSSH接続する  
 ホストOSからの場合
@@ -114,7 +115,7 @@ Vagranta-vbguestプラグインがゲストを更新してくれる。
 
 `>vagrant box add centos-6.7 C:\Vagrant\rebox\package.box`
 
-##ベースBOXの使用
+## ベースBOXの使用
 
 C:\Vagrant\CentOS67 にベースBOXを使って仮想マシンを作成する
 
