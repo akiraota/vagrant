@@ -1,125 +1,125 @@
-ƒx[ƒXBOX‚Ìì¬Žè‡
+ãƒ™ãƒ¼ã‚¹BOXã®ä½œæˆæ‰‹é †
 ===============
 
-ƒCƒ[ƒW‚©‚çBOX‚ðì¬‚µ‚½‚èAƒo[ƒWƒ‡ƒ“ƒAƒbƒv‚È‚Ç‚ÅBOX‚ðÄì¬‚·‚é‚Æ‚«A
-OS‚²‚Æ‚Éƒx[ƒX‚Æ‚È‚éBOX‚ðƒCƒ[ƒW‰»‚µ‚Ä‚¨‚­‚ÆAŠe—p“r‚ÌƒT[ƒo[‚ð\’z‚·‚éÛ‚É
-ƒCƒ[ƒW‚Ì‹¤—L‚¨‚æ‚Ñ\’zŽžŠÔ‚Ì’Zk‚È‚Ç‚ÌŒø‰Ê‚ªŠú‘Ò‚Å‚«‚éB
+ã‚¤ãƒ¡ãƒ¼ã‚¸ã‹ã‚‰BOXã‚’ä½œæˆã—ãŸã‚Šã€ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã‚¢ãƒƒãƒ—ãªã©ã§BOXã‚’å†ä½œæˆã™ã‚‹ã¨ãã€
+OSã”ã¨ã«ãƒ™ãƒ¼ã‚¹ã¨ãªã‚‹BOXã‚’ã‚¤ãƒ¡ãƒ¼ã‚¸åŒ–ã—ã¦ãŠãã¨ã€å„ç”¨é€”ã®ã‚µãƒ¼ãƒãƒ¼ã‚’æ§‹ç¯‰ã™ã‚‹éš›ã«
+ã‚¤ãƒ¡ãƒ¼ã‚¸ã®å…±æœ‰ãŠã‚ˆã³æ§‹ç¯‰æ™‚é–“ã®çŸ­ç¸®ãªã©ã®åŠ¹æžœãŒæœŸå¾…ã§ãã‚‹ã€‚
 
-¦ƒzƒXƒgOS‚É‚Íƒ`ƒ‡ƒRƒ‰ƒeƒB‚ÅVirtualBoxAVagrant‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ä‚¢‚é‚à‚Ì‚Æ‚·‚éB
-¦Vagrant‚Ìƒvƒ‰ƒOƒCƒ“vagrant-vbguest‚ÍˆÈ‰º‚ÌƒRƒ}ƒ“ƒh‚ÅƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ä‚¢‚é‚à‚Ì‚Æ‚·‚éB
+â€»ãƒ›ã‚¹ãƒˆOSã«ã¯ãƒãƒ§ã‚³ãƒ©ãƒ†ã‚£ã§VirtualBoxã€VagrantãŒã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã‚‹ã‚‚ã®ã¨ã™ã‚‹ã€‚
+â€»Vagrantã®ãƒ—ãƒ©ã‚°ã‚¤ãƒ³vagrant-vbguestã¯ä»¥ä¸‹ã®ã‚³ãƒžãƒ³ãƒ‰ã§ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã‚‹ã‚‚ã®ã¨ã™ã‚‹ã€‚
 >vagrant plugin install vagrant-vbguest
 
-‚±‚±‚Å‚ÍƒzƒXƒgOS‘¤iWindowsj‚Ås‚¤ì‹Æ‚Æ‚µ‚Äà–¾‚·‚éB
-‚Ü‚½Aƒx[ƒXBOX‚Ìì¬‚ÍˆÈ‰º‚ÌƒtƒHƒ‹ƒ_‚Ås‚Á‚½‚à‚Ì‚Æ‚·‚éB
+ã“ã“ã§ã¯ãƒ›ã‚¹ãƒˆOSå´ï¼ˆWindowsï¼‰ã§è¡Œã†ä½œæ¥­ã¨ã—ã¦èª¬æ˜Žã™ã‚‹ã€‚
+ã¾ãŸã€ãƒ™ãƒ¼ã‚¹BOXã®ä½œæˆã¯ä»¥ä¸‹ã®ãƒ•ã‚©ãƒ«ãƒ€ã§è¡Œã£ãŸã‚‚ã®ã¨ã™ã‚‹ã€‚
 C:\Vagrant\rebox
 
-¡BOX‚Ì“o˜^
-OSƒCƒ“ƒXƒg[ƒ‹’¼Œã‚Ìó‘Ô‚Å‚ ‚éBOX‚ÍˆÈ‰º‚Ì•û–@‚Å“üŽè
-‡@VirtualBox‚ÅISOƒCƒ[ƒW‚ðŽg‚Á‚ÄŽèì‹Æ‚ÅƒCƒ“ƒXƒg[ƒ‹
-‡AATLAS‚È‚Ç‚Å”z•z‚³‚ê‚Ä‚¢‚éBOX‰»Ï‚ÝOSƒCƒ[ƒW‚ð“o˜^
-  >vagrant box add BOX–¼ BOX‚ÌURL
-‡BPacker‚ðŽg‚¢BOX‚ðì¬
-  ’²¸’†
+â– BOXã®ç™»éŒ²
+OSã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ç›´å¾Œã®çŠ¶æ…‹ã§ã‚ã‚‹BOXã¯ä»¥ä¸‹ã®æ–¹æ³•ã§å…¥æ‰‹
+â‘ VirtualBoxã§ISOã‚¤ãƒ¡ãƒ¼ã‚¸ã‚’ä½¿ã£ã¦æ‰‹ä½œæ¥­ã§ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
+â‘¡ATLASãªã©ã§é…å¸ƒã•ã‚Œã¦ã„ã‚‹BOXåŒ–æ¸ˆã¿OSã‚¤ãƒ¡ãƒ¼ã‚¸ã‚’ç™»éŒ²
+  >vagrant box add BOXå BOXã®URL
+â‘¢Packerã‚’ä½¿ã„BOXã‚’ä½œæˆ
+  èª¿æŸ»ä¸­
 
-¡ƒx[ƒXBOX‚Ìì¬€”õ
+â– ãƒ™ãƒ¼ã‚¹BOXã®ä½œæˆæº–å‚™
 
-C:\Vagrant\rebox ‚Å‰¼‘zƒ}ƒVƒ“ì¬Ï‚Ý‚È‚ç1`3‚Å‰¼‘zƒ}ƒVƒ“‚â“o˜^BOX‚ðíœ
-1.ƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‹N“®(VirtualBOX‚©‚çíœ)
+C:\Vagrant\rebox ã§ä»®æƒ³ãƒžã‚·ãƒ³ä½œæˆæ¸ˆã¿ãªã‚‰1ï½ž3ã§ä»®æƒ³ãƒžã‚·ãƒ³ã‚„ç™»éŒ²BOXã‚’å‰Šé™¤
+1.ã‚³ãƒžãƒ³ãƒ‰ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆèµ·å‹•(VirtualBOXã‹ã‚‰å‰Šé™¤)
   >cd C:\Vagrant\rebox
   >vagrant destroy
   >vagrant box remove centos-6.7
 
-2.C:\Vagrant\rebox\.vagrant‚ðíœ
+2.C:\Vagrant\rebox\.vagrantã‚’å‰Šé™¤
 
-3.C:\Vagrant\rebox\Vagrantfile‚ðíœ
+3.C:\Vagrant\rebox\Vagrantfileã‚’å‰Šé™¤
 
-4.GitBucket‚ÌƒŠƒ‚[ƒgƒŠƒ|ƒWƒgƒŠ‚©‚çVagrantBaseBoxƒvƒƒWƒFƒNƒg‚ð”CˆÓ‚ÌƒtƒHƒ‹ƒ_‚ÉƒNƒ[ƒ“
+4.GitBucketã®ãƒªãƒ¢ãƒ¼ãƒˆãƒªãƒã‚¸ãƒˆãƒªã‹ã‚‰VagrantBaseBoxãƒ—ãƒ­ã‚¸ã‚§ã‚¯ãƒˆã‚’ä»»æ„ã®ãƒ•ã‚©ãƒ«ãƒ€ã«ã‚¯ãƒ­ãƒ¼ãƒ³
 VagrantBaseBox
-„¥CentOS
-„ „¤6.7
-„ @„¤rebox
-„ @@„¥conf
-„ @@„ „¥provision.sh
-„ @@„ „¤setup_centos67.sh
-„ @@„¥package.sh
-„ @@„¤Vagrantfile
-„¤Windows
-@„¥7x64
-@„ „¤
-@„¤2012R2
-@@„¤
+â”œCentOS
+â”‚â””6.7
+â”‚ã€€â””rebox
+â”‚ã€€ã€€â”œconf
+â”‚ã€€ã€€â”‚â”œprovision.sh
+â”‚ã€€ã€€â”‚â””setup_centos67.sh
+â”‚ã€€ã€€â”œpackage.sh
+â”‚ã€€ã€€â””Vagrantfile
+â””Windows
+ã€€â”œ7x64
+ã€€â”‚â””
+ã€€â””2012R2
+ã€€ã€€â””
 
-5.ƒx[ƒXBOXì¬—pVagrantfile‚ðC:\Vagrant\rebox‚ÉƒRƒs[
+5.ãƒ™ãƒ¼ã‚¹BOXä½œæˆç”¨Vagrantfileã‚’C:\Vagrant\reboxã«ã‚³ãƒ”ãƒ¼
 
-6.ƒx[ƒXBOXì¬—pconfƒtƒHƒ‹ƒ_‚ðC:\Vagrant\rebox‚ÉƒRƒs[
+6.ãƒ™ãƒ¼ã‚¹BOXä½œæˆç”¨confãƒ•ã‚©ãƒ«ãƒ€ã‚’C:\Vagrant\reboxã«ã‚³ãƒ”ãƒ¼
 
-7.ƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‹N“®i5`10•ª’ö“xj
-  Ž©“®“I‚ÉVirtualBOX‚É‰¼‘zƒ}ƒVƒ“‚Ìì¬‚ÆVagrant‚ÌBOX“o˜^‚ðŽÀŽ{
-  ‚±‚ÌŽžAƒzƒXƒg‚ÆƒQƒXƒg‚ÌŠÔ‚ÅVirtualBox Guest Additions‚Ìƒo[ƒWƒ‡ƒ“‚ª
-  ˆá‚¤ê‡‚ÉAVagranta-vbguestƒvƒ‰ƒOƒCƒ“‚ªƒQƒXƒg‚ðXV‚µ‚Ä‚­‚ê‚éB
+7.ã‚³ãƒžãƒ³ãƒ‰ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆèµ·å‹•ï¼ˆ5ï½ž10åˆ†ç¨‹åº¦ï¼‰
+  è‡ªå‹•çš„ã«VirtualBOXã«ä»®æƒ³ãƒžã‚·ãƒ³ã®ä½œæˆã¨Vagrantã®BOXç™»éŒ²ã‚’å®Ÿæ–½
+  ã“ã®æ™‚ã€ãƒ›ã‚¹ãƒˆã¨ã‚²ã‚¹ãƒˆã®é–“ã§VirtualBox Guest Additionsã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ãŒ
+  é•ã†å ´åˆã«ã€Vagranta-vbguestãƒ—ãƒ©ã‚°ã‚¤ãƒ³ãŒã‚²ã‚¹ãƒˆã‚’æ›´æ–°ã—ã¦ãã‚Œã‚‹ã€‚
   >cd C:\Vagrant\rebox
   >vagrant up
 
-8.ƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‚ÅƒQƒXƒgOS‚ðˆê’U’âŽ~
+8.ã‚³ãƒžãƒ³ãƒ‰ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã§ã‚²ã‚¹ãƒˆOSã‚’ä¸€æ—¦åœæ­¢
   >vagrant halt
 
-9.ƒQƒXƒgOS‚ðÄ“x‹N“®‚µ–â‘è‚È‚¢‚©Šm”F
-  ¦Guest Addtion‚ªyum updateŒã‚É‚à‚¤ˆê“xXV‚³‚ê‚éê‡‚ ‚è
+9.ã‚²ã‚¹ãƒˆOSã‚’å†åº¦èµ·å‹•ã—å•é¡Œãªã„ã‹ç¢ºèª
+  â€»Guest AddtionãŒyum updateå¾Œã«ã‚‚ã†ä¸€åº¦æ›´æ–°ã•ã‚Œã‚‹å ´åˆã‚ã‚Š
   >vagrant up
 
-¡ƒx[ƒXBOX‚Ìì¬
-1.ƒx[ƒXBOXì¬‘O‚ÉBOX‚Ìƒtƒ@ƒCƒ‹ƒTƒCƒY‚ð¬‚³‚­‚·‚éˆ—‚ðs‚¤‚½‚ßTeraTerm‚ÅƒQƒXƒgOS‚ÉSSHÚ‘±‚·‚é
-  ƒzƒXƒgOS‚©‚ç‚Ìê‡
+â– ãƒ™ãƒ¼ã‚¹BOXã®ä½œæˆ
+1.ãƒ™ãƒ¼ã‚¹BOXä½œæˆå‰ã«BOXã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚µã‚¤ã‚ºã‚’å°ã•ãã™ã‚‹å‡¦ç†ã‚’è¡Œã†ãŸã‚TeraTermã§ã‚²ã‚¹ãƒˆOSã«SSHæŽ¥ç¶šã™ã‚‹
+  ãƒ›ã‚¹ãƒˆOSã‹ã‚‰ã®å ´åˆ
     IP:127.0.0.1
-    Port:2222iƒfƒtƒHƒ‹ƒgƒ|[ƒgƒtƒHƒ[ƒhj
+    Port:2222ï¼ˆãƒ‡ãƒ•ã‚©ãƒ«ãƒˆãƒãƒ¼ãƒˆãƒ•ã‚©ãƒ¯ãƒ¼ãƒ‰ï¼‰
   ID/PASS:vagrant/vagrant
 
-2.ƒp[ƒ~ƒbƒVƒ‡ƒ“‚ÌŠm”F
+2.ãƒ‘ãƒ¼ãƒŸãƒƒã‚·ãƒ§ãƒ³ã®ç¢ºèª
   /home/vagrant 700 or 711 or 755
   /home/vagrant/.ssh 700
   /home/vagrant/.ssh/authorized_keys 600
 
-3.rootƒ†[ƒU[‚ÅƒVƒFƒ‹‚ðŽÀs‚·‚éB
+3.rootãƒ¦ãƒ¼ã‚¶ãƒ¼ã§ã‚·ã‚§ãƒ«ã‚’å®Ÿè¡Œã™ã‚‹ã€‚
   su -
   cd /var
   mkdir usr
   cp -f /vagrant/package.sh /var/usr/package.sh
   /var/usr/package.sh > /var/usr/package.log 2>&1
 
-4.ƒQƒXƒgOS‚ª’âŽ~‚µ‚Ä‚¢‚é‚±‚Æ‚ðŠm”F‚µƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‚ÅˆÈ‰º‚ðŽÀs
-  ƒx[ƒXBOX‚ª C:\Vagrant\rebox ‚É package.box ‚Æ‚¢‚¤ƒtƒ@ƒCƒ‹‚Åì¬‚³‚ê‚é
+4.ã‚²ã‚¹ãƒˆOSãŒåœæ­¢ã—ã¦ã„ã‚‹ã“ã¨ã‚’ç¢ºèªã—ã‚³ãƒžãƒ³ãƒ‰ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã§ä»¥ä¸‹ã‚’å®Ÿè¡Œ
+  ãƒ™ãƒ¼ã‚¹BOXãŒ C:\Vagrant\rebox ã« package.box ã¨ã„ã†ãƒ•ã‚¡ã‚¤ãƒ«ã§ä½œæˆã•ã‚Œã‚‹
   >cd C:\Vagrant\rebox
   >vagrant package
 
-5.ƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‚ÅˆÈ‰º‚ðŽÀs‚µƒx[ƒXBOX‚ð“o˜^‚·‚éi1•ª’ö“xj
+5.ã‚³ãƒžãƒ³ãƒ‰ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆã§ä»¥ä¸‹ã‚’å®Ÿè¡Œã—ãƒ™ãƒ¼ã‚¹BOXã‚’ç™»éŒ²ã™ã‚‹ï¼ˆ1åˆ†ç¨‹åº¦ï¼‰
   >vagrant box add centos-6.7 C:\Vagrant\rebox\package.box
 
-¡ƒx[ƒXBOX‚ÌŽg—p
-C:\Vagrant\CentOS67 ‚Éƒx[ƒXBOX‚ðŽg‚Á‚Ä‰¼‘zƒ}ƒVƒ“‚ðì¬‚·‚é
+â– ãƒ™ãƒ¼ã‚¹BOXã®ä½¿ç”¨
+C:\Vagrant\CentOS67 ã«ãƒ™ãƒ¼ã‚¹BOXã‚’ä½¿ã£ã¦ä»®æƒ³ãƒžã‚·ãƒ³ã‚’ä½œæˆã™ã‚‹
 
-C:\Vagrant\CentOS67 ‚Å‰¼‘zƒ}ƒVƒ“–¢ì¬‚È‚çvagrantfileì¬
-1.ƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‹N“®
+C:\Vagrant\CentOS67 ã§ä»®æƒ³ãƒžã‚·ãƒ³æœªä½œæˆãªã‚‰vagrantfileä½œæˆ
+1.ã‚³ãƒžãƒ³ãƒ‰ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆèµ·å‹•
   >cd C:\Vagrant
   >mkdir CentOS67
   >cd CentOS67
   >vagrant init centos-6.7
 
-C:\Vagrant\CentOS67 ‚Å‰¼‘zƒ}ƒVƒ“ì¬Ï‚Ý‚È‚ç‰¼‘zƒ}ƒVƒ“‚ðíœ‚·‚é
-1.ƒRƒ}ƒ“ƒhƒvƒƒ“ƒvƒg‹N“®(VirtualBOX‚©‚çíœ)
+C:\Vagrant\CentOS67 ã§ä»®æƒ³ãƒžã‚·ãƒ³ä½œæˆæ¸ˆã¿ãªã‚‰ä»®æƒ³ãƒžã‚·ãƒ³ã‚’å‰Šé™¤ã™ã‚‹
+1.ã‚³ãƒžãƒ³ãƒ‰ãƒ—ãƒ­ãƒ³ãƒ—ãƒˆèµ·å‹•(VirtualBOXã‹ã‚‰å‰Šé™¤)
   >cd C:\Vagrant\CentOS67
   >vagrant destroy
 
-2.C:\Vagrant\CentOS67\.vagrant‚ðíœ
+2.C:\Vagrant\CentOS67\.vagrantã‚’å‰Šé™¤
 
-‰¼‘zƒ}ƒVƒ“‚ðì¬‚·‚é
-1.ƒQƒXƒgOS‚Ì‹N“®i3•ª‚­‚ç‚¢‚Å‹N“®j
+ä»®æƒ³ãƒžã‚·ãƒ³ã‚’ä½œæˆã™ã‚‹
+1.ã‚²ã‚¹ãƒˆOSã®èµ·å‹•ï¼ˆ3åˆ†ãã‚‰ã„ã§èµ·å‹•ï¼‰
   >vagrant up
 
-2.–â‘è‚È‚­‹N“®‚ª‚Å‚«SSHÚ‘±‚Å‚«‚½‚çƒQƒXƒgOS‚ð’âŽ~
-  vagrantfile‚ð·‚µ‘Ö‚¦‚é‚È‚ÇƒvƒƒrƒWƒ‡ƒjƒ“ƒO‚µ‚Ä”CˆÓ\¬‚ÌƒT[ƒo[‚ðì¬
-  ‚±‚±‚ÅVirtualBox‚ÌÝ’è‚ðˆêŽž“I‚É2CPU‚É‚·‚é‚È‚Ç‚‘¬‰»‚ð‚·‚éi30•ª’ö“xj
+2.å•é¡Œãªãèµ·å‹•ãŒã§ãSSHæŽ¥ç¶šã§ããŸã‚‰ã‚²ã‚¹ãƒˆOSã‚’åœæ­¢
+  vagrantfileã‚’å·®ã—æ›¿ãˆã‚‹ãªã©ãƒ—ãƒ­ãƒ“ã‚¸ãƒ§ãƒ‹ãƒ³ã‚°ã—ã¦ä»»æ„æ§‹æˆã®ã‚µãƒ¼ãƒãƒ¼ã‚’ä½œæˆ
+  ã“ã“ã§VirtualBoxã®è¨­å®šã‚’ä¸€æ™‚çš„ã«2CPUã«ã™ã‚‹ãªã©é«˜é€ŸåŒ–ã‚’ã™ã‚‹ï¼ˆ30åˆ†ç¨‹åº¦ï¼‰
   >vagrant halt
   >vagrant up
   >vagrant provision
-  ‚Ü‚½‚Í
+  ã¾ãŸã¯
   >vagrant reload --provision
