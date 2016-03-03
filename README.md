@@ -30,7 +30,7 @@ OSインストール直後の状態であるBOXは以下の方法で入手
 
 ## ベースBOXの作成準備
 
-'C:\Vagrant\rebox' で仮想マシン作成済みなら1～3で仮想マシンや登録BOXを削除
+`C:\Vagrant\rebox` で仮想マシン作成済みなら1～3で仮想マシンや登録BOXを削除
 
 1.コマンドプロンプト起動(VirtualBOXから削除)
 
@@ -64,7 +64,7 @@ OSインストール直後の状態であるBOXは以下の方法で入手
 6.ベースBOX作成用confフォルダを `C:\Vagrant\rebox` にコピー
 
 7.コマンドプロンプト起動（5～10分程度）  
-自動的にVirtualBOXに仮想マシンの作成とVagrantのBOX登録を実施  
+自動的にVirtualBoxで仮想マシンの作成とVagrantのBOX登録を実施する。  
 この時、ホストとゲストの間でVirtualBox Guest Additionsのバージョンが違う場合に、  
 Vagranta-vbguestプラグインがゲストを更新してくれる。
 
@@ -119,7 +119,8 @@ Vagranta-vbguestプラグインがゲストを更新してくれる。
 
 #### 仮想マシンの作成準備
 
-- `C:\Vagrant\CentOS67` で仮想マシン未作成ならvagrantfile作成  
+- `C:\Vagrant\CentOS67` で仮想マシン未作成ならvagrantfile作成
+
 1.コマンドプロンプト起動
 
     >cd C:\Vagrant
@@ -127,7 +128,8 @@ Vagranta-vbguestプラグインがゲストを更新してくれる。
     >cd CentOS67
     >vagrant init centos-6.7
 
-- `C:\Vagrant\CentOS67` で仮想マシン作成済みなら仮想マシンを削除する  
+- `C:\Vagrant\CentOS67` で仮想マシン作成済みなら仮想マシンを削除する
+
 1.コマンドプロンプト起動
 
     >cd C:\Vagrant\CentOS67
@@ -141,11 +143,13 @@ Vagranta-vbguestプラグインがゲストを更新してくれる。
 
     >vagrant up
 
-2.問題なく起動ができSSH接続できたらゲストOSを停止  
-vagrantfileを差し替えるなどプロビジョニングして任意構成のサーバーを作成  
-ここでVirtualBoxの設定を一時的に2CPUにするなど高速化をする（30分程度）
+2.問題なく起動ができSSH接続できたらゲストOSを停止
 
     >vagrant halt
+
+3.vagrantfileを差し替えるなどプロビジョニングして任意構成のサーバーを作成  
+ここでVirtualBoxの設定を一時的に2CPUにするなど高速化をする。（30分程度）
+
     >vagrant up
     >vagrant provision
     または
