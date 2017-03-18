@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# ユーザー・グループの追加
+useradd jenkins
+echo 'jenkins:jenkins' | chpasswd
+groupadd jenkins
+usermod -G jenkins jenkins
+
 # jenkins 1.6 のインストール
 cd /var/tmp
 wget -O /etc/yum.repos.d/jenkins.repo -nv http://pkg.jenkins-ci.org/redhat/jenkins.repo

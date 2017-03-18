@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# This script will be executed *after* all the other init scripts.
+# You can put your own initialization stuff in here if you don't
+# want to do the full Sys V style init stuff.
+
+touch /var/lock/subsys/local
+
+
+export JAVA_HOME=/usr/local/j2sdk1.4.2_12
+export PATH=$PATH:$JAVA_HOME/bin
+export CLASSPATH=.:$JAVA_HOME/lib/tools.jar
+/usr/local/tomcat/bin/startup.sh
+
+/usr/local/apache2/bin/apachectl start 
+
+
+
+
+
+
